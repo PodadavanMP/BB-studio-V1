@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#masaze">Masáže</a></li>
+                <li><a href="#pedikura">Pedikúra</a></li>
+                <li><a href="#cenik">Ceník</a></li>
+                <li><a href="#studio">Studio</a></li>
+                <li><a href="#kontakty">Kontakty</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Úvodní sekce -->
+    <section id="uvod">
+        <h1>Vítejte v BB Studiu 👋</h1>
+        <p>Jako majitelka studia nabízím profesionální masáže a pedikúru, které vám pomohou najít cestu od každodenního stresu.</p>
+        <button onclick="scrollToSection('kontakty')">Objednat</button>
+        <img src="path-to-image" alt="BB Studio">
+    </section>
+
+    <!-- Masáže -->
+    <section id="masaze">
+        <h2>Masáže</h2>
+        <img src="path-to-image" alt="Masáže">
+        <p>V BB studiu nabízím relaxační masáže pro dokonalé uvolnění těla i mysli.</p>
+    </section>
+
+    <!-- Pedikúra -->
+    <section id="pedikura">
+        <h2>Pedikúra</h2>
+        <img src="path-to-image" alt="Pedikúra">
+        <p>Poskytuji také komplexní péči o vaše nohy.</p>
+    </section>
+
+    <!-- Ceník -->
+    <section id="cenik">
+        <h2>Ceník</h2>
+        <img src="path-to-image" alt="Ceník">
+    </section>
+
+    <!-- Studio -->
+    <section id="studio">
+        <h2>Studio</h2>
+        <img src="path-to-image" alt="Studio">
+        <p>Jižní pohled na studio s moderním vybavením a příjemným prostředím.</p>
+    </section>
+
+    <!-- Kontakty -->
+    <section id="kontakty">
+        <h2>Kontakty</h2>
+        <p>
+            <a href="tel:+420723023534">+420 723 023 534</a><br>
+            <a href="mailto:studio_bb@example.cz">studio_bb@example.cz</a><br>
+            <a href="https://www.instagram.com/studio_bb526/" target="_blank">Instagram: studio_bb526</a>
+        </p>
+        <a href="https://www.google.com/maps/place/BBstudio/@48.9320216,14.4769076,15.27z/data=!4m6!3m5!1s0x477345781e679c31:0xad676337205d7448!8m2!3d48.932661!4d14.4818922!16s%2Fg%2F11wqlmzqm5?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <img src="path-to-map-image" alt="Mapa BB Studia">
+        </a>
+    </section>
+
+    <!-- Pevné tlačítko pro návrat nahoru -->
+    <button id="scrollTopButton" onclick="scrollToTop()">🔝</button>
+
+    <script src="script.js">
+        // Skript pro scrollování na sekce
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Skript pro návrat nahoru
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>    
+</body>
+</html>
