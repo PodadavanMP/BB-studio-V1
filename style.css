@@ -3,32 +3,33 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    color: #333;
+    color: #35463E;
 }
 
 h1, h2 {
-    color: #2b2b2b;
+    color: #35463E;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #35463E;
 }
 
 button {
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #FFD700; /* Zlatá barva */
-    color: #fff;
+    background-color: #FFE698; /* Zlatá barva */
+    color: #35463E;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #daa520;
+    background-color: #dbbc6e;
 }
 
 section {
@@ -39,36 +40,50 @@ section {
 
 /* Navigace */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1000;
+    padding: 0px 10px; /* Odstup od vrchu */
+}
+
+.logo {
+    width: 300px;
+    height: 250px;
+    margin: 0;
+    padding: 0; /* Odsazení od horního okraje */
+    display: block; 
+}
+
+nav {
+    background-color: #FFE698;
+    border-radius: 30px 0px 0px 30px; /* Kulaté rohy */
+    display: inline-block; /* Umožní zarovnat menu */
+    padding: 10px 20px; /* Vnitřní odsazení */
+    margin-left: auto; /* Posune doprava */
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    display: flex; /* Horizontální uspořádání */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Mezera mezi položkami */
 }
 
-nav ul li a {
+nav a {
+    text-decoration: none;
+    color: #35463E; /* Zelený text */
     font-size: 18px;
     font-weight: bold;
-    padding: 10px;
-    color: #2b2b2b;
 }
 
-nav ul li a:hover {
-    color: #FFD700;
+nav a:hover {
+    text-decoration: underline; /* Efekt při najetí */
 }
 
 /* Úvodní sekce */
@@ -81,7 +96,7 @@ nav ul li a:hover {
 #uvod img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 /* Sekce styl */
@@ -93,10 +108,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#masaze img, #pedikura img, #studio img {
+img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 /* Tabulka v ceníku */
@@ -114,7 +129,7 @@ nav ul li a:hover {
 
 #cenik table th {
     background-color: #f4f4f4;
-    color: #2b2b2b;
+    color: #35463E;
     font-weight: bold;
 }
 
@@ -129,7 +144,7 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 /* Pevné tlačítko pro návrat nahoru */
@@ -138,10 +153,10 @@ nav ul li a:hover {
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
-    background-color: #FFD700;
+    background-color: #FFE698;
     color: #fff;
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     font-size: 18px;
     display: none; /* Defaultně skryté */
@@ -149,7 +164,7 @@ nav ul li a:hover {
 }
 
 #scrollTopButton:hover {
-    background-color: #daa520;
+    background-color: #dbbc6e;
 }
 
 /* Animace tlačítka při scrollování */
