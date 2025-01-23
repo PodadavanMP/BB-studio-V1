@@ -8,13 +8,17 @@ body {
     color: #35463E;
 }
 
-h1, h2 {
-    color: #35463E;
-}
-
 a {
     text-decoration: none;
     color: #35463E;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: left;
+    color: #35463E;
+    
 }
 
 button {
@@ -24,8 +28,9 @@ button {
     color: #35463E;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 button:hover {
@@ -33,9 +38,9 @@ button:hover {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 20px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 /* Navigace */
@@ -45,22 +50,23 @@ header {
     align-items: center;
     background-color: #fff;
     width: 100%;
-    padding: 0px 10px; /* Odstup od vrchu */
+    padding: 0px;
+    box-sizing: border-box; /* Odstup od vrchu */
 }
 
 .logo {
-    width: 300px;
-    height: 250px;
+    width: 125px;
+    height: auto;
     margin: 0;
-    padding: 0; /* Odsazení od horního okraje */
+    padding: 0; 
     display: block; 
 }
 
 nav {
     background-color: #FFE698;
-    border-radius: 30px 0px 0px 30px; /* Kulaté rohy */
+    border-radius: 50px 0px 0px 50px; /* Kulaté rohy */
     display: inline-block; /* Umožní zarovnat menu */
-    padding: 10px 20px; /* Vnitřní odsazení */
+    padding: 10px 30px; /* Vnitřní odsazení */
     margin-left: auto; /* Posune doprava */
 }
 
@@ -72,13 +78,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Mezera mezi položkami */
+    margin: 0 20px; /* Mezera mezi položkami */
 }
 
 nav a {
     text-decoration: none;
     color: #35463E; /* Zelený text */
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -87,50 +93,43 @@ nav a:hover {
 }
 
 /* Úvodní sekce */
-#uvod {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 100px 20px;
+#uvod h1, h2 {
+    color: #35463E;
+    font-size: 60px;
+    text-align: left;
+}
+
+#uvod text {
+    font-size: 30px;
+    text-align: left;
+    color: #35463E;
 }
 
 #uvod img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 50px;
 }
 
 /* Sekce styl */
 #masaze, #pedikura, #cenik, #studio, #kontakty {
-    background-color: #fff;
     margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-img {
-    width: 100%;
+#masaze img, #pedikura img, #studio img {
+    width: 50%;
     height: auto;
     border-radius: 50px;
+
 }
 
 /* Tabulka v ceníku */
-#cenik table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-#cenik table th, #cenik table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-#cenik table th {
-    background-color: #f4f4f4;
-    color: #35463E;
-    font-weight: bold;
+#cenik img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
 
 /* Kontakty */
@@ -141,7 +140,7 @@ img {
 }
 
 #kontakty img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-top: 20px;
     border-radius: 50px;
@@ -152,22 +151,35 @@ img {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 15px;
-    background-color: #FFE698;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #35463E;
+    color: #FFE698;
     border: none;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    font-size: 18px;
+    font-size: 35px;
+    font-weight: bold;
     display: none; /* Defaultně skryté */
     z-index: 1000;
 }
 
 #scrollTopButton:hover {
-    background-color: #dbbc6e;
+    background-color: #363022;
 }
 
 /* Animace tlačítka při scrollování */
 body.scrolled #scrollTopButton {
     display: block;
+}
+
+/* Patička */
+#footer {
+    background-color: #FFE698;
+    padding: 20px;
+}
+
+#footerText {
+    text-align: center;
+    font-size: 15px;
+    color: #35463E;
 }
