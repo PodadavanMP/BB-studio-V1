@@ -7,6 +7,10 @@ body {
     line-height: 1.6;
     color: #35463E;
 }
+h2 {
+    font-size: 40px;
+    color: #35463E;
+}
 
 a {
     text-decoration: none;
@@ -28,7 +32,7 @@ button {
     color: #35463E;
     border: none;
     border-radius: 25px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -93,44 +97,111 @@ nav a:hover {
 }
 
 /* Úvodní sekce */
-#uvod h1, h2 {
-    color: #35463E;
-    font-size: 60px;
-    text-align: left;
-}
+#uvod {
+    padding: 20px;
+    margin-top: 80px;
+  }
+  
+  .container {
+    display: flex;
 
-#uvod text {
-    font-size: 30px;
-    text-align: left;
-    color: #35463E;
-}
-
-#uvod img {
+  }
+  
+  /* Textová část */
+  .text-box {
     max-width: 50%;
-    height: auto;
+    margin-left: 30px;
+    
+  }
+  
+  .text-box h1 {
+    font-size: 50px;
+    color: #333;
+  }
+  
+  .text-box p {
+    font-size: 25px;
+    color: #555;
+  }
+  
+  .text-box button {
+    padding: 10px 20px;
+    background-color: #ffe599;
+    border: none;
     border-radius: 50px;
-}
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .text-box button:hover {
+    background-color: #ffd966;
+  }
+  
+  /* Obrázková část */
+  .image-box img {
+    max-width: 75%;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 133px;
+  }
+  
+  /* Responsivita */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-box, .image-box {
+      max-width: 100%;
+    }
+  
+    .image-box img {
+      width: 100%;
+    }
+  }
 
-/* Sekce styl */
+/* Style sekce */
 #masaze, #pedikura, #cenik, #studio, #kontakty {
     margin-top: 20px;
     border-radius: 10px;
-    text-align: center;
 }
 
-#masaze img, #pedikura img, #studio img {
+/* Masáže */
+#masaze img {
     width: 50%;
     height: auto;
     border-radius: 50px;
 
 }
 
-/* Tabulka v ceníku */
-#cenik img {
-    max-width: 100%;
+/* Pedikúra */
+#pedikura img {
+    max-width: 50%;
     height: auto;
     border-radius: 50px;
 }
+
+/* Tabulka v ceníku */
+
+#cenik h2 {
+    text-align: center;
+}
+
+#cenik img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* Studio */
+#studio img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50px;
+}
+
 
 /* Kontakty */
 #kontakty a {
