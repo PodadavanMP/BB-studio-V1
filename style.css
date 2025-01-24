@@ -8,8 +8,10 @@ body {
     color: #35463E;
 }
 h2 {
-    font-size: 40px;
+    font-size: 50px;
     color: #35463E;
+    margin-bottom: 0%;
+
 }
 
 a {
@@ -35,6 +37,7 @@ button {
     font-size: 30px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
@@ -111,12 +114,15 @@ nav a:hover {
   .text-box {
     max-width: 50%;
     margin-left: 30px;
+    margin-top: 0px;
     
   }
   
   .text-box h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: #333;
+    margin-bottom: 3px;
+    margin-top: 0px;
   }
   
   .text-box p {
@@ -142,7 +148,7 @@ nav a:hover {
   .image-box img {
     max-width: 75%;
     border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     margin-left: 133px;
   }
   
@@ -164,57 +170,148 @@ nav a:hover {
 
 /* Style sekce */
 #masaze, #pedikura, #cenik, #studio, #kontakty {
-    margin-top: 20px;
-    border-radius: 10px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+
+#studio .container, #masaze .container, #uvod .container, #pedikura .container {
+    align-items: center;
+    width: 1200px;
 }
 
 /* Masáže */
-#masaze img {
-    width: 50%;
-    height: auto;
-    border-radius: 50px;
-
+#masaze h2, #pedikura h2, #studio h2 {
+    text-align: left;
+    margin-bottom: 0px;
 }
+
+#masaze .image-box {
+    order: 1; /* Přesune obrázek doleva */
+    margin-right: 30px; /* Mezera mezi obrázkem a textem */
+    width: auto;
+ }
+ 
+ #masaze .text-box {
+    order: 2; /* Umístí text doprava */
+    flex: 1;
+ }
+ 
+ #masaze img {
+    width: 485px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 0px;
+    margin-top: 30px;
+ }
 
 /* Pedikúra */
 #pedikura img {
-    max-width: 50%;
-    height: auto;
+    width: 485px;
+    height: 480px;
     border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Tabulka v ceníku */
 
 #cenik h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #cenik img {
-    max-width: 90%;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* volitelné, zajistí responzivitu */
     border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Studio */
-#studio img {
-    max-width: 50%;
-    height: auto;
+#studio .image-box {
+    order: 1; /* Přesune obrázek doleva */
+    margin-right: 30px; /* Mezera mezi obrázkem a textem */
+    width: auto;
+ }
+ 
+ #studio .text-box {
+    order: 2; /* Umístí text doprava */
+    flex: 1;
+ }
+ 
+ #studio img {
+    width: 485px;
+    height: 480px;
+    object-fit: cover;
     border-radius: 50px;
-}
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 0px;
+    margin-top: 30px;
+ }
 
 
 /* Kontakty */
-#kontakty a {
-    display: inline-block;
-    margin: 10px 0;
-    color: #2b2b2b;
+#kontakty .container {
+    display: flex;
+    align-items: center;
+    gap: 240px; /* Nastaví mezeru mezi textem a obrázkem */
+    margin-bottom: 150px;
+    padding-left: 0px;
 }
 
-#kontakty img {
-    max-width: 50%;
-    height: auto;
-    margin-top: 20px;
+#kontakty a {
+    display: inline-block;
+    margin: 10px 0px;
+    color: #2b2b2b;
+
+}
+
+#kontakty .text-box {
+    width: 30%; 
+  }
+  
+  #kontakty .text-box h1 {
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+  
+  #kontakty .text-box p {
+    font-size: 25px;
+    color: #555;
+  }
+  
+  #kontakty .text-box button {
+    padding: 10px 20px;
+    background-color: #ffe599;
+    border: none;
     border-radius: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #kontakty .text-box button:hover {
+    background-color: #ffd966;
+  }
+  
+  #kontakty .image-box img {
+    max-width: 75%;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 133px;
+  }
+
+#kontakty img {
+    width: 485px;
+    height: 480px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Pevné tlačítko pro návrat nahoru */
