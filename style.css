@@ -156,130 +156,40 @@ nav a:hover {
   }
   
   /* Responsivita */
-@media (max-width: 340px) {
+@media (max-width: 768px) {
   /* Obecná úprava */
   body {
-      margin: 0;
-      padding: 0;
-      width: 70px;
+      width: 490px;
       display: flex:
-      justify-content: center;
-      align-items: center;
+      justify-content: right;
       background-color: #fff;
+  }
+  
+  #studio .container, #masaze .container, #uvod .container, #pedikura .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+
+  .logo {
+      width: 20vw; 
   }
 
   h1 {
-      font-size: 32px;
-
+      font-size: 10vw;
   }
 
-  h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
+  image-box img {
+      width: 312;
+      height: 225;
   }
 
-  p {
-      font-size: 10px;
-      line-height: 1.5;
-      width: 294px
-      height: 112px;
-  }
+  .text-box {
+      place-items: center;
+    }
 
-  /* Obrázky */
-  .image-box img {
-      max-width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      margin: 10px auto;
-
-  }
-
-  /* Navigace - skrytí původní a přidání hamburger menu */
-  nav {
-      display: none;
-  }
-
-  .hamburger {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 30px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 1001;
-  }
-
-  .mobile-nav {
-      display: none;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      background: #FFE698;
-      text-align: center;
-      z-index: 1000;
-  }
-
-  .mobile-nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-  }
-
-  .mobile-nav ul li {
-      padding: 15px;
-      border-bottom: 1px solid #35463E;
-  }
-
-  .mobile-nav ul li a {
-      font-size: 20px;
-      font-weight: bold;
-      color: #35463E;
-      text-decoration: none;
-  }
-
-  /* Aktivní menu */
-  .mobile-nav.show {
-      display: block;
-  }
-
-  /* Kontakty sekce */
-  #kontakty .container {
-      flex-direction: column;
-      gap: 15px;
-  }
-
-  #kontakty .text-box {
-      width: 100%;
-  }
-
-  #kontakty img {
-      width: 100%;
-      height: auto;
-  }
-
-  /* Tlačítko objednat */
-  .order-button {
-      background-color: #FFE698;
-      color: #35463E;
-      font-size: 22px;
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      margin-top: 10px;
-      display: inline-block;
-  }
-
-  .order-button:hover {
-      background-color: #dbbc6e;
-  }
 }
-
-
 /* Style sekce */
 #masaze, #pedikura, #cenik, #studio, #kontakty {
     margin-top: 250px;
@@ -373,16 +283,16 @@ nav a:hover {
     gap: 240px; /* Nastaví mezeru mezi textem a obrázkem */
     margin-bottom: 150px;
     padding-left: 0px;
-}
+ }
 
-#kontakty a {
+  #kontakty a {
     display: inline-block;
     margin: 10px 0px;
     color: #2b2b2b;
 
-}
+ }
 
-#kontakty .text-box {
+  #kontakty .text-box {
     width: 30%; 
   }
   
@@ -419,7 +329,7 @@ nav a:hover {
     margin-left: 133px;
   }
 
-#kontakty img {
+  #kontakty img {
     width: 485px;
     height: 480px;
     border-radius: 50px;
@@ -441,9 +351,9 @@ nav a:hover {
     font-weight: bold;
     display: none; /* Defaultně skryté */
     z-index: 1000;
-}
+ }
 
-#scrollTopButton:hover {
+  #scrollTopButton:hover {
     background-color: #363022;
 }
 
@@ -456,9 +366,9 @@ body.scrolled #scrollTopButton {
 #footer {
     background-color: #FFE698;
     padding: 20px;
-}
+ }
 
-#footerText {
+  #footerText {
     text-align: center;
     font-size: 15px;
     color: #35463E;
