@@ -1,0 +1,1 @@
+Introducing the first version of my debut website for a real business! I put HTML, CSS, JavaScript, and Git into practice. This is just the beginning - in the next version, I'll focus on responsive design and search engine optimization (SEO). Stay tuned for BBstudio version 2.0! 🚀
