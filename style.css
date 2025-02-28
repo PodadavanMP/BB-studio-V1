@@ -160,7 +160,7 @@ nav a:hover {
   /* Obecná úprava */
   body {
       width: 490px;
-      display: flex:
+      display: flex;
       justify-content: right;
       background-color: #fff;
   }
